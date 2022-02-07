@@ -132,3 +132,34 @@ Cascading Style Sheets is a style sheet language used for describing the present
 ## BootStrap
 Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
 
+1.	BootstraPaginationPager
+2.	Bootstrap4Dropdown
+3.	Bootstrap4Navbar
+4.	Bootstrap4ProgressBar
+5.	BootstrapAlerts
+6.	BootstrapBadge
+7.	BootstrapButton
+8.	BootstrapCollapsible
+9.	BootstrapContainers
+10.	BootstrapDropdown
+11.	BootstrapForm
+12.	BootstrapGlyphicon
+13.	BootstrapGrid
+14.	BootstrapImagesCarousel
+15.	BootstrapInput
+16.	BootstrapIntro
+17.	BootstrapJumbotron
+18.	BootstrapListGroup
+19.	BootstrapModal
+20.	BootstrapNavbar
+21.	BootstrapPanel
+22.	BootstrapPopover
+23.	BootstrapProgressBar
+24.	BootstrapRegistration
+25.	BootstrapSample
+26.	BootstrapScrollspy
+27.	BootstrapTables
+28.	BootstrapTabsPills
+29.	BootstrapTooltip
+30.	BootstrapWells.html
+
