@@ -1,0 +1,67 @@
+body {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #E44D26;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F16529, #E44D26);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F16529, #E44D26);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+#section1 {
+    padding-top: 50px;
+    height: 500px;
+    text-decoration: none;
+}
+
+#section1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#section1 .popover {
+    color: black;
+}
+
+#section2 {
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+#section3 a {
+    text-decoration: none;
+    color: black;
+}
+
+#section3 a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#section4 a {
+    text-decoration: none;
+    color: white;
+}
+
+#section4 a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#section6 {
+    padding-top: 50px;
+    height: 500px;
+}
+
+#section6 button {
+    color: red;
+
+}
