@@ -5,26 +5,28 @@ Hello everyone!. This repository consists of several subfolders. SubFolder struc
 DLithe_DotnetFSD_JanFeb2022
 
            --
-           -----> Charana H U
-                      --
-                      -----> Front End
+           DLithe_DotnetFSD_JanFeb2022
+                    --
+                    -----> Charana H U
                                 --
-                                ----->Task 1
-                                ----->Task 2
-                                ----->Task 3
-                                -
-                                -
-                                -
-                                ----->Task N 
-                      -----> Back End
-                                --      
-                                ----->Task 1
-                                ----->Task 2
-                                ----->Task 3
-                                -
-                                -
-                                -
-                                ----->Task N
+                                -----> Front End
+                                            --
+                                            ----->Task 1
+                                            ----->Task 2
+                                            ----->Task 3
+                                            -
+                                            -
+                                            -
+                                            ----->Task N 
+                                -----> Back End
+                                            --      
+                                            ----->Task 1
+                                            ----->Task 2
+                                            ----->Task 3
+                                            -
+                                            -
+                                            -
+                                            ----->Task N
 
 
 # Front End
