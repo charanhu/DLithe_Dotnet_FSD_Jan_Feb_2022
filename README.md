@@ -2,10 +2,8 @@
 
 Hello everyone!. This repository consists of several subfolders. SubFolder structure is like below
 
-
---
-
 DLithe_DotnetFSD_JanFeb2022
+
            --
            -----> Charana H U
                       --
