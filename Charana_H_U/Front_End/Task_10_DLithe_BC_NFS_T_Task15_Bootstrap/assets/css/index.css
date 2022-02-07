@@ -4,12 +4,13 @@ body {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    background: #E44D26;
+    background: #1A2980;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F16529, #E44D26);
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F16529, #E44D26);
+    background: linear-gradient(to right, #26D0CE, #1A2980);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
 }
@@ -64,4 +65,8 @@ body {
 #section6 button {
     color: red;
 
+}
+
+#section2, #section3, #section4 {
+    padding-top: 50px;
 }
