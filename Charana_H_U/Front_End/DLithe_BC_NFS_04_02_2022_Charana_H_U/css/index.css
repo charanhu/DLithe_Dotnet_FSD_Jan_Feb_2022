@@ -1,0 +1,47 @@
+body{
+    font-size: 22px;
+    background-color: #000;
+    color: white;
+}
+.navbar.navbar-inverse{
+    height: 80px;
+    background-color: #000;
+}
+.navbar-brand{
+    padding-top: 30px;
+    font-size: 22px;
+}
+.navbar-header .navbar-brand{
+    color: white;
+}
+.collapse.navbar-collapse{
+    padding-top: 15px;
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.btn.btn-danger{
+    height: 50px;
+}
+.btn.btn-danger a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    padding-top: 20px;
+}
+.jumbotron{
+    color: black;
+    
+}
+.footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+  }

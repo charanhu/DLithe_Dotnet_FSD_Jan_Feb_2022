@@ -1,0 +1,224 @@
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(72, 0, 114);
+    font-family:"Open Sans" , sans-serif;
+    font-size: 22px;
+    color: white;
+}
+p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: white;            
+}
+a:hover{
+    color: red;
+}
+.header {
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: rgb(72, 0, 114);
+    color: white;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+
+  #student {
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  #student td,
+  #student th {
+      border: 1px solid rgb(221, 221, 221);
+      padding: 8px;
+  }
+
+  #student tr:nth-child(even) {
+      background-color: #000000;
+  }
+
+  #student tr:hover {
+      background-color: rgb(2, 6, 255);
+  }
+
+  #student th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #aa0a04;
+      color: white;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#student td{
+    text-align: center;
+}
+#css_text{
+    color: rgb(72, 0, 114);
+    background-color: white;
+}
+#shadow{
+    text-align: center;
+    padding-top: 20px;
+}
+#indent{
+    text-indent: 50px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;  
+}
+#css_text_shadow{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color:rgb(72, 0, 114);
+}
+#text_shadow{
+    text-shadow: 3px 5px 2px red;
+}
+
+#div_overflow{
+    overflow: scroll;
+    background-color: white;
+    color:rgb(72, 0, 114);
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+
+}
+#div_css_links{
+    background-color: white;
+    padding: 20px;
+}
+#div_css_links a{
+    color: red;
+}
+#div_css_links a:hover{
+    color: green;
+    text-decoration: underline;
+}
+#div_css_links a:active{
+    color: blue;
+    background-color: green;
+}
+#div_css_links a:visited{
+    color: pink;
+}
+#div_css_outline{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color:rgb(72, 0, 114);
+    border: 20px solid red;
+    text-align: center;
+}
+#css_outline_para{
+    background-color: rgb(72, 0, 114);
+    padding: 20px;
+    text-align: center;
+    color:white;
+    border: inherit;
+    text-align: center;
+}
+#div_css_float{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color:rgb(72, 0, 114);
+}
+
+.div_css_border{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color:red;
+    text-align: center;
+}
+img.one{
+    float: left;
+}
+img.two{
+    float: right;
+}
+img.three{
+    float: none;
+}
+#dotted {
+    border-style: dotted;
+}
+#dashed {
+    border-style: dashed;
+}
+#solid {
+    border-style: solid;
+}
+#double {
+    border-style: double;
+}
+#groove {
+    border-style: groove;
+}
+#ridge {
+    border-style: ridge;
+}
+#inset {
+    border-style: inset;
+}
+#outset {
+    border-style: outset;
+}
+#none {
+    border-style: none;
+}
+#hidden {
+    border-style: hidden;
+}
+#mix {
+    border-style: dotted dashed solid double;
+}

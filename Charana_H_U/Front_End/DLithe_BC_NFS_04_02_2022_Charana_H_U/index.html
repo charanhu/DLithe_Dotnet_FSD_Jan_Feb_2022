@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">PANDA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <button type="button" class="btn btn-danger"><a href="#">Get Started</a></button>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/html.png" alt="Los Angeles" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/css.png" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/js.png" alt="New york" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Containers</h1>
+        <p>You learned from the previous chapter that Bootstrap requires a containing element to wrap site contents.</p>
+        <p>Containers are used to pad the content inside of them, and there are two container classes available:</p>
+        <ol>
+            <li>The .container class provides a responsive fixed width container</li>
+            <li>The .container-fluid class provides a full width container, spanning the entire width of the viewport
+            </li>
+        </ol>
+    </div>
+
+    <!--- Container Fluid -->
+    <div class="container-fluid">
+        <h1>Fluid Container</h1>
+        <p>Use the .container-fluid class to create a full width container, that will always span the entire width of
+            the screen (width is always 100%):</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/html.png" alt="Los Angeles" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/css.png" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/js.png" alt="New york" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <br>
+
+    <!--- jumbotron -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Jumbotron</h1>
+            <p>A jumbotron indicates a big grey box for calling extra attention to some special content or information.
+
+                <br><br> Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap
+                elements/classes.
+            </p>
+        </div>
+    </div>
+
+    <!--- Bootstrap 4 Grid System -->
+    <div class="container">
+        <h1>Bootstrap Grid System</h1>
+        <p>
+            Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
+
+            If you do not want to use all 12 columns individually, you can group the columns together to create wider
+            columns:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/html.png" class="img-responsive" alt="HTML5 Icon" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="images/css.png" class="img-responsive" alt="HTML5 Icon" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="images/js.png" class="img-responsive" alt="HTML5 Icon" width="100%">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/html.png" class="img-responsive" alt="HTML5 Icon" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="images/css.png" class="img-responsive" alt="HTML5 Icon" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="images/js.png" class="img-responsive" alt="HTML5 Icon" width="100%">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--- Glyphicons -->
+    <div class="container">
+        <h1>Glyphicons</h1>
+        <p>Bootstrap includes 260 glyphs from the Glyphicon Halflings set. Glyphicons Halflings are normally not
+            available for free, but their creator has made them available for Bootstrap free of cost. As a thank you,
+            you should include a link back to Glyphicons whenever possible.Use glyphicons in text, buttons, toolbars,
+            navigation, or forms:</p>
+    </div>
+
+    <!--- footer -->
+    <div class="footer">
+        <span class="glyphicon glyphicon-envelope"></span>&nbsp;
+        <span class="glyphicon glyphicon-search"></span>&nbsp;
+        <span class="glyphicon glyphicon-print"></span>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+        body {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(72, 0, 114);
+            font-family: "Open Sans", sans-serif;
+            font-size: 22px;
+            color: white;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Navbar or Menu bar -->
+    <!-- Menu bar or navigation bar -->
+    <div class="header">
+        <a href="index.html" class="logo">CSS</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="header-active" class="dropbtn" href="types_of_css.html">CSS Types</a>
+                <div class="dropdown-content">
+                    <a href="types_of_css.html">Inline CSS</a>
+                    <a href="types_of_css.html">Internal CSS</a>
+                    <a href="types_of_css.html">External CSS</a>
+                </div>
+            </div>
+            <a href="css_for_table.html">CSS for Table</a>
+            <a href="css_colors.html">CSS Colors</a>
+            <a href="css_selectors.html">CSS Selectors</a>
+            <a href="https://github.com/charanhu/DLithe_BC_NFS_03_02_2022_Charana_H_U">Source Code</a>
+        </div>
+    </div>
+    <hr>
+
+    <img src="images/types_ofcss.png" class="center" alt="CSS" width="20%">
+    <h2>Types of CSS</h2>
+    <p>CSS (Cascading Style Sheet) describes the HTML elements which are displayed on screen, paper, or in other media.
+        It saves a lot of time. It controls the layout of multiple web pages at one time. It sets the font-size,
+        font-family, color, background color on the page.</p>
+    <p>It allows us to add effects or animations to the website. We use CSS to display animations like buttons, effects,
+        loaders or spinners, and also animated backgrounds.</p>
+    <p>Without using CSS, the website will not look attractive. There are 3 types of CSS which are below:</p>
+    <ul>
+        <li>Inline CSS</li>
+        <li>Internal / Embedded CSS</li>
+        <li>External CSS</li>
+    </ul>
+    <p>Inline CSS is the CSS which is written inside the HTML file. It is called as Inline CSS.</p>
+    <p>Embedded CSS is the CSS which is written inside the HTML tag. It is called as Embedded CSS.</p>
+    <p>External CSS is the CSS file which is located in another file. It is called as External CSS.</p>
+    <hr>
+
+    <!-- Inline CSS -->
+    <h2>1. Inline CSS</h2>
+    <p style="text-align: justify;">Inline CSS is used to style a specific HTML element. Add a style attribute to each
+        HTML tag without using the
+        selectors. Managing a website may difficult if we use only inline CSS. However, Inline CSS in HTML is useful in
+        some situations. We have not access the CSS files or to apply styles to element.
+
+        <br>In the following example, we have used the inline CSS in &lt;p/&gt; and &lt;h1/&gt; tag.
+    </p>
+    <p>Example: </p>
+    <script src="https://gist.github.com/charanhu/41c06393cb92ad88243fc1460c6c0f20.js"></script>
+    <hr>
+
+    <!-- Internal CSS -->
+    <h2>2. Internal CSS</h2>
+    <p>The Internal CSS has &lt;style&gt; tag in the &lt;head&gt; section of the HTML document. This CSS style is an
+        effective way to style single pages. Using the CSS style for multiple web pages is time-consuming because we
+        require placing the style on each web page.</p>
+    <p>We can use the internal CSS by using the following steps:
+        <br><br>1. Firstly, open the HTML page and locate the &lt;head&gt;
+        <br><br>2. Put the following code after the &lt;head&gt;
+    </p>
+    <p>Syntax: &lt;style type="text/css"&gt; </p>
+    <p>3. Add the rules of CSS in the new line.</p>
+    <p>Example:
+        <script src="https://gist.github.com/charanhu/1535ecf8ed9c201bc6c6bccfe002c029.js"></script>
+    </p>
+    <hr>
+
+    <!-- Exrternal CSS -->
+    <h2>3. External CSS</h2>
+    <p>In external CSS, we link the web pages to the external .css file. It is created by text editor. The CSS is more
+        efficient method for styling a website. By editing the .css file, we can change the whole site at once.
+
+        <br> To use the external CSS, follow the steps, given below:
+    </p>
+    <p>1. Create a new .css file with text editor, and add Cascading Style Sheet rules too.</p>
+    <p>Example: </p>
+    <p>Sample HTML file without styles</p>
+    <script src="https://gist.github.com/charanhu/e6e5db48b638dc11553eb9d3d375ea62.js"></script>
+    <p>CSS file for the above Sample HTML file</p>
+    <script src="https://gist.github.com/charanhu/da3273577c49f383c1576b13b50dfb67.js"></script>
+    <p>2. Add a reference to the external .cssfile right after &lt;title&gt; tag in the &lt;head&gt; section of HTML
+        sheet:</p>
+    <p>Syntax: &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt; </p>
+
+
+
+
+
+</body>
+
+</html>

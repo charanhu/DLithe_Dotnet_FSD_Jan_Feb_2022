@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up using Get Method</title>
+    <style>
+        body {
+            background-color: purple;
+            color: white;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        a {
+            color: white;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ComplexAI</h1>
+    <form action="SignIn.html" method="POST">
+        <legend><strong>SignUp to ComplexAI</strong></legend>
+        <br>
+        <label>Title:</label>
+        <label>
+            <input type="radio" name="title" value="Mr.">Mr.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Mrs.">Mrs.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Miss.">Miss.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Dr.">Dr.
+        </label>
+        <br>
+        <p>
+            <label>First Name:</label>
+        </p>
+        <p>
+            <label>
+                <input type="text" name="firstname" placeholder="First Name" required>
+            </label>
+        </p>
+
+        <p>
+            <label>Last Name:</label>
+        </p>
+        <label>
+            <input type="text" name="lastname" placeholder="Last Name">
+        </label>
+        <p>
+            <label>Email:</label>
+        </p>
+        <label>
+            <input type="email" name="email" placeholder="Email" required>
+        </label>
+        <p>
+            <label>Password:</label>
+        </p>
+        <label>
+            <input type="password" name="password" placeholder="Password" required>
+        </label>
+        <p>
+            <label>Phone Number:</label>
+        </p>
+        <label>
+            <input type="number" name="phonenumber" placeholder="Phone Number" required>
+        </label>
+        <p>
+            <label>Country</label>
+        </p>
+        <select>
+            <option value="India">India</option>
+            <option value="Srilanka">Srilanka</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <p>
+            <input type="checkbox" value="" required>I agree to <a href="#">Terms and Conditions</a>
+        </p>
+        <p>
+            <input type="submit" value="Sign Up">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+
+</html>
