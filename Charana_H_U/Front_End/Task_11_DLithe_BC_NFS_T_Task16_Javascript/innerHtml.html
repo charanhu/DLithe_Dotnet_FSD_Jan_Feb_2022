@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">JavaScript</a>
+                <a class="navbar-brand" href="index.html">JavaScript</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -36,6 +36,21 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <script>
+            function prompter() {
+                var reply = prompt("Hello, Type your Name ", "")
+                alert("Welcome to CG VAK " + reply + "!")
+            }
+        </script>
+
+        <input type="button" onclick="prompter()" value="Click on me and type your Name to see Magic">
+        <form>
+    </div>
+    <hr>
+
+
     <div class="container">
         <h1>Inner HTML</h1>
         <p id="demo" onclick="myFunction1()">JavaScript is a lightweight, interpreted programming language with
@@ -43,7 +58,7 @@
 
         <script>
             function myFunction1() {
-                document.getElementById("demo").innerHTML = "JavaScript is a lightweight, interpreted programming language with object-oriented capabilities. It is designed to make client-side Web development easier, more efficient, and fun. JavaScript is a multi-paradigm language. It supports object-oriented, imperative, and functional programming styles.";
+                document.getElementById("demo").innerHTML = "JavaScript is a lightweight, interpreted programming language with object-oriented capabilities. It is designed to make client-side Web development easier, more efficient, and fun. JavaScript is a multi-paradigm language. It supports object-oriented, imperative, and functional programming styles. JavaScript is a lightweight, interpreted programming language with object-oriented capabilities. It is designed to make client-side Web development easier, more efficient, and fun. JavaScript is a multi-paradigm language. It supports object-oriented, imperative, and functional programming styles.JavaScript is a lightweight, interpreted programming language with object-oriented capabilities. It is designed to make client-side Web development easier, more efficient, and fun. JavaScript is a multi-paradigm language. It supports object-oriented, imperative, and functional programming styles. JavaScript is a lightweight, interpreted programming language with object-oriented capabilities. It is designed to make client-side Web development easier, more efficient, and fun. JavaScript is a multi-paradigm language. It supports object-oriented, imperative, and functional programming styles.";
             }
         </script>
 
@@ -68,21 +83,40 @@
     <hr>
 
     <div class="container">
-        <h1>Check time and Date now</h1>
-        <p id="myP"></p>
-
-        <button onclick="myFunction3()" class="btn btn-info">Try it</button>
-
-        <p id="demo2"></p>
-
-        <script>
-            function myFunction3() {
-                var x = document.getElementById("myP").innerHTML;
-                document.getElementById("demo2").innerHTML = Date();
+        <script type="text/javascript">
+            function changeText2() {
+                var userInput = document.getElementById('userInput').value;
+                document.getElementById('name').innerHTML = userInput;
             }
         </script>
+
+        <p>My name is: <b id='name'>First Name</b> </p>
+        <input type='text' id='userInput' placeholder='Enter Text Here' />
+        <input type='button' onclick='changeText2()' value='Change Text' />
+        <hr>
     </div>
     <hr>
+
+    <div class="container">
+        <script>
+            function confirmation() {
+                var answer = confirm("Leave Current Page")
+                if (answer) {
+                    alert("Bye bye!")
+                    window.location = "http://www.google.com/";
+                }
+                else {
+                    alert("Thanks for staying here")
+                }
+            }
+        </script>
+        <form>
+            <input type="button" onclick="confirmation()" value="Exit Page">
+        </form>
+    </div>
+    <hr>
+
+  
 
 
 </body>
