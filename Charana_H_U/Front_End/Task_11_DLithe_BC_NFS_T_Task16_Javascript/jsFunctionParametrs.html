@@ -36,53 +36,26 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1>Inner HTML</h1>
-        <p id="demo" onclick="myFunction1()">JavaScript is a lightweight, interpreted programming language with
-            object-oriented capabilities.<br><br>Read More</p>
-
-        <script>
-            function myFunction1() {
-                document.getElementById("demo").innerHTML = "JavaScript is a lightweight, interpreted programming language with object-oriented capabilities. It is designed to make client-side Web development easier, more efficient, and fun. JavaScript is a multi-paradigm language. It supports object-oriented, imperative, and functional programming styles.";
-            }
-        </script>
-
-    </div>
-    <hr>
 
     <div class="container">
-        <h1>Check time and Date now</h1>
-        <p id="myP"></p>
-
-        <button onclick="myFunction2()" class="btn btn-info">Try it</button>
-
-        <p id="demo1"></p>
-
+        <h1>Function Parameters</h1>
+        <hr>
+        <h2>Square of a number</h2>
+        <form>
+            Number : <input type="number" name="a" id="a" class="form-control"><br>
+            Power: <input type="number" name="b" id="b" class="form-control"><br>
+            <button type="button" class="btn btn-success" onclick="square()">Square</button>
+        </form>
         <script>
-            function myFunction2() {
-                var x = document.getElementById("myP").innerHTML;
-                document.getElementById("demo1").innerHTML = Date();
+            function square() {
+                var a = document.getElementById('a').value;
+                var b = document.getElementById('b').value;
+
+                var sum = parseInt(a) ** parseInt(b);
+                alert(sum);
             }
         </script>
     </div>
-    <hr>
-
-    <div class="container">
-        <h1>Check time and Date now</h1>
-        <p id="myP"></p>
-
-        <button onclick="myFunction3()" class="btn btn-info">Try it</button>
-
-        <p id="demo2"></p>
-
-        <script>
-            function myFunction3() {
-                var x = document.getElementById("myP").innerHTML;
-                document.getElementById("demo2").innerHTML = Date();
-            }
-        </script>
-    </div>
-    <hr>
 
 
 </body>
