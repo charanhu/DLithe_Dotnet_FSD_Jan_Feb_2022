@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname1");
+            x.value = x.value.toUpperCase();
+        }
+        function myFunction1() {
+            var x = document.getElementById("fname2");
+            x.value = x.value.toUpperCase();
+        }
+        function myFunction2() {
+            alert("You pressed a key inside the input field");
+        }
+        function myFunction3(x) {
+            x.style.background = "red";
+        }
+        function myFunction5() {
+            document.getElementById("demo").innerHTML = "Hello World!. The onclick event triggers a function when an element is clicked on.";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#2">Functions with Parameters<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#21">Function with No Parameters</a></li>
+                            <li><a href="#22">Function with Parameters</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="jsEvents.html">Events</a></li>
+                    <li><a href="innerHtml.html">Inner HTML</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- On focus out -->
+    <div class="container">
+        <h1>onfocusout Event</h1>
+        <p>Enter your name: <input type="text" id="fname1" onfocusout="myFunction()"></p>
+        <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    </div>
+    <hr>
+
+    <!-- key up -->
+    <div class="container">
+        <h1>KeyUp</h1>
+        <p>A function is triggered when the user releases a key in the input field. The function transforms the
+            character to upper case.</p>
+        <p> Enter your name: <input type="text" id="fname2" onkeyup="myFunction1()"></p>
+    </div>
+    <hr>
+
+    <!-- key down -->
+    <div class="container">
+        <h1>KeyDown</h1>
+        <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+        <p><input type="text" onkeydown="myFunction2()"></p>
+    </div>
+    <hr>
+
+    <!-- focus in -->
+    <div class="container">
+        <h1>Focus In</h1>
+        <p>Enter your name: <input type="text" onfocusin="myFunction3(this)"></p>
+        <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+    </div>
+    <hr>
+
+    <!-- page load -->
+    <div class="container">
+        <h1>Page Load</h1>
+        <h2>The onclick Event</h2>
+        <p>The onclick event triggers a function when an element is clicked on.</p>
+        <p>Click to trigger a function that will output "Hello World":</p>
+        <button onclick="myFunction5()">Click me</button>
+        <p id="demo"></p>
+    </div>
+
+</body>
+
+</html>
