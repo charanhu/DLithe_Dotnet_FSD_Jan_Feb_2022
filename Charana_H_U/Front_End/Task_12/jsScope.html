@@ -25,12 +25,189 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li ><a href="index.html">Arrays</a></li>
+                    <li><a href="index.html">Arrays</a></li>
                     <li><a href="jsStrings.html">Strings</a></li>
                     <li class="active"><a href="jsScope.html">Scope</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <h1>Global Variable</h1>
+        <hr>
+        <p>
+            <b>Global Variable</b> is a variable that is defined outside of a function.
+        </p>
+        <pre>
+            <code>
+                var x = 10;
+                document.write(x);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var x = 10;
+                document.write(x);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>Local Variable</h1>
+        <hr>
+        <p>
+            <b>Local Variable</b> is a variable that is defined inside a function.
+        </p>
+        <pre>
+            <code>
+                function myFunction() {
+                    var x = 10;
+                    document.write(x);
+                }
+                myFunction();
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                function myFunction() {
+                    var x = 10;
+                    document.write(x);
+                }
+                myFunction();
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>try</h1>
+        <hr>
+        <p>
+            <b>try</b> is a statement that allows you to execute a block of code.
+        </p>
+        <pre>
+            <code>
+                try {
+                    var x = 10;
+                    document.write(x);
+                } catch (error) {
+                    document.write(error);
+                }
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                try {
+                    var x = 10;
+                    document.write(x);
+                } catch (error) {
+                    document.write(error);
+                }
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>try-catch</h1>
+        <hr>
+        <p>
+            <b>try-catch</b> is a statement that allows you to execute a block of code.
+        </p>
+        <pre>
+            <code>
+                function deleteName() {
+                    var name_of_user = "YouTube";
+                }
+                function DeleteNameFromDataBase() {
+                    try {
+                        document.write(name_of_user);
+                    }
+                    catch (ex) {
+                        document.getElementById("error").innerHTML = ex;
+                    }
+                }
+                deleteName();
+                DeleteNameFromDataBase();
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p id="error">
+            <script>
+                function deleteName() {
+                    var name_of_user = "YouTube";
+                }
+                function DeleteNameFromDataBase() {
+                    try {
+                        document.write(name_of_user);
+                    }
+                    catch (ex) {
+                        document.getElementById("error").innerHTML = ex;
+                    }
+                }
+                deleteName();
+                DeleteNameFromDataBase();
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>try-catch-finally</h1>
+        <hr>
+        <p>
+            <b>try-catch-finally</b> is a statement that allows you to execute a block of code.
+        </p>
+        <pre>
+            <code>
+                try {
+                    var x = 10;
+                    document.write(x);
+                    document.write(y);
+                } catch (error) {
+                    document.write(error);
+                } finally {
+                    document.write("Finally");
+                }
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                try {
+                    var x = 10;
+                    document.write(x);
+                    document.write(y);
+                } catch (error) {
+                    document.write("<br>"+ error);
+                } finally {
+                    document.write("<br>" + "Finally");
+                }
+            </script>
+        </p>
+    </div>
+
+
+
+
+
+
+
 </body>
+
 </html>
