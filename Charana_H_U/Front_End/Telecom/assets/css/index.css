@@ -6,11 +6,6 @@ body{
   padding-top: 50px;
 }
 
-.container-fluid{
-  top:0;
-  position: sticky;
-}
-
 .carousel-inner{
   border-radius: 15px;
 }
@@ -26,6 +21,6 @@ body{
     border-radius: 15px 15px 0 0;
 }
 
-.table .table-bordered .table-hover{
+.table-bordered{
   border-radius: 15px;
 }
