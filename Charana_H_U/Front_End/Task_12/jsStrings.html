@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Strings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Arrays</a></li>
+                    <li class="active"><a href="jsStrings.html">Strings</a></li>
+                    <li><a href="jsScope.html">Scope</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>charAt()</h1>
+        <hr>
+        <p>
+            <b>charAt()</b> method returns the character at the specified index.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.charAt(0);
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.charAt(0);
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>concat()</h1>
+        <hr>
+        <p>
+            <b>concat()</b> method joins two or more strings, and returns a new string.
+        </p>
+        <pre>
+            <code>
+                var str1 = "Hello ";
+                var str2 = "World!";
+                var res = str1.concat(str2);
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str1 = "Hello ";
+                var str2 = "World!";
+                var res = str1.concat(str2);
+                document.write(res);
+            </script>
+        </p>
+    </div>
+
+</body>
+
+</html>
