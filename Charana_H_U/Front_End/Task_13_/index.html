@@ -87,7 +87,7 @@
                     this.PhoneNumber = "123-456-7890";
                 }
                 var emp1 = new Employee();
-                document.write(emp1.firstName + "<br>");
+                document.write("Results: <hr>"+emp1.firstName + "<br>");
                 document.write(emp1.lastName + "<br>");
                 document.write(emp1.designation + "<br>");
                 document.write(emp1.PhoneNumber + "<br>");
@@ -110,7 +110,7 @@
                 document.write(emp2.PhoneNumber + "<br>");
                 document.write(emp2.location + "<br>");
 
-                document.write("<hr>" + "Prototype Function" + "<hr>" + proto.constructor + "<hr>");
+                document.write("<hr>" + "Prototype Function" + "<hr><pre>" + proto.constructor + "</pre><hr>");
 
                 emp2.Message();
             </script>
