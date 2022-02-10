@@ -24,3 +24,7 @@ body{
 .table-bordered{
   border-radius: 15px;
 }
+
+.form-group{
+  border-radius: 15px;
+}
