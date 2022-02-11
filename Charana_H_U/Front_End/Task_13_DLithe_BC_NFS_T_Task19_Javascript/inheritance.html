@@ -155,6 +155,150 @@
         </p>
         <br>
     </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>JavaScript Overloading</h1>
+        <hr>
+        <p>
+            Overloading is a feature of JavaScript that allows you to define multiple functions with the same name.
+        </p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                class display {
+                    disp(x, y) {
+                        document.write("2 arguments" + "<br>" + x + "<br>" + y);
+                    }
+                    disp(x, y, z) {
+                        document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
+                    }
+                }
+                var d = new display();
+                d.disp(4, 3);
+                d.disp(4, 3, 2);
+            </script>
+            </code>
+        </pre>
+        <p>Results:</p>
+        <p>
+            <script>
+                class display {
+                    disp(x, y) {
+                        document.write("2 arguments" + "<br>" + x + "<br>" + y);
+                    }
+                    disp(x, y, z) {
+                        document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
+                    }
+                }
+                var d = new display();
+                d.disp(4, 3);
+                d.disp(4, 3, 2);
+            </script>
+        </p>
+        <br>
+        <p>Example:</p>
+        <pre>
+            <code>
+                class Substarction {
+                    sub(x, y) {
+                        document.write("2 Arguments" + "<br>" + (x - y));
+                    }
+                    sub(x, y, z) {
+                        document.write("3 Arguments" + "<br>" + (x - y - z));
+                    }
+                }
+                var s = new Substarction();
+                s.sub(4, 3);
+                s.sub(4, 3, 2);
+            </script>
+            </code>
+        </pre>
+        <p>Results:</p>
+        <p>
+            <script>
+                class Substarction {
+                    sub(x, y) {
+                        document.write("2 Arguments" + "<br>" + (x - y));
+                    }
+                    sub(x, y, z) {
+                        document.write("3 Arguments" + "<br>" + (x - y - z));
+                    }
+                }
+                var s = new Substarction();
+                s.sub(4, 3);
+                s.sub(4, 3, 2);
+            </script>
+        </p>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>JavaScript Overriding</h1>
+        <hr>
+
+        <p>
+            Overriding is a feature of JavaScript that allows you to define a function with the same name as a parent
+            class's function.
+        </p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                class Shape {
+                    constructor(name) {
+                        this.name = name;
+                    }
+                    getName() {
+                        return this.name;
+                    }
+                }
+
+                class Circle extends Shape {
+                    constructor(name, radius) {
+                        super(name);
+                        this.radius = radius;
+                    }
+                    getName() {
+                        return super.getName() + " " + this.radius;
+                    }
+                }
+
+                let circle = new Circle("Circle", 5);
+                document.getElementById("demo4").innerHTML = circle.getName();
+            </code>
+        </pre>
+        <p>Results:</p>
+        <p id="demo4">
+            <script>
+                class Shape {
+                    constructor(name) {
+                        this.name = name;
+                    }
+                    getName() {
+                        return this.name;
+                    }
+                }
+
+                class Circle extends Shape {
+                    constructor(name, radius) {
+                        super(name);
+                        this.radius = radius;
+                    }
+                    getName() {
+                        return super.getName() + " " + this.radius;
+                    }
+                }
+
+                let circle = new Circle("Circle", 5);
+                document.getElementById("demo4").innerHTML = circle.getName();
+            </script>
+        </p>
+        <br>
+    </div>
+    <br>
 
 
 

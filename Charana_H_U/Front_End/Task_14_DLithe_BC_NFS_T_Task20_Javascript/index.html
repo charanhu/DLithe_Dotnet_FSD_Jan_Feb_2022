@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Home - ABSTRACT CLASSES</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -22,15 +22,79 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Prototype</a>
+                    <a class="nav-link active" href="index.html">ABSTRACT CLASSES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="inheritance.html">Inheritance</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Polymorphism.html">Polymorphism</a>
+                    <a class="nav-link" href="jsEncapsulation.html">ENCAPSULATION</a>
                 </li>
             </ul>
         </div>
     </nav>
     <br>
+
+    <div class="container" style="margin-top: 70px;">
+        <br>
+        <h1>JavaScript ABSTRACT CLASSES</h1>
+        <br>
+        <p>
+            <b>Abstract classes</b> are classes that cannot be instantiated. They are used to define the skeleton of a
+            class, providing a template for the subclasses to follow.
+        </p>
+        <p>
+            <b>Abstract classes</b> are used to define the skeleton of a class, providing a template for the subclasses
+            to
+            follow.
+        </p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                class Animal {
+                    constructor() {
+                        if (this.constructor == Animal) {
+                            throw new Error("Abstract classes cannot be created.");
+                        }
+                    }
+                    getName() {
+                        throw new Error("Abstract method not implemented.");
+                    }
+                }
+
+                class lion extends Animal {
+                    display() {
+                        super.getName();
+                        console.log("Lion");
+                    }
+                }
+                var obj = new lion();
+                obj.display();
+            </code>
+        </pre>
+        <p>
+            <script>
+                class Animal {
+                    constructor() {
+                        if (this.constructor == Animal) {
+                            throw new Error("Abstract classes cannot be created.");
+                        }
+                    }
+                    getName() {
+                        throw new Error("Abstract method not implemented.");
+                    }
+                }
+
+                class lion extends Animal {
+                    display() {
+                        super.getName();
+                        console.log("Lion");
+                    }
+                }
+                var obj = new lion();
+                obj.display();
+            </script>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
