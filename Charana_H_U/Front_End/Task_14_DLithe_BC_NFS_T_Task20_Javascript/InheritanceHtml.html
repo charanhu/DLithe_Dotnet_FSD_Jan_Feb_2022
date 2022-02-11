@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function a
+        function A(a) {
+            this.a = a;
+            A.prototype.getA = function () {
+                document.write(a + "<br>");
+            }
+        }
+
+        // function b
+        function B(a, b) {
+            A.call(this, a);
+            this.b = b;
+            B.prototype.getB = function () {
+                obj.getA();
+                document.write(b + "<br>");
+            }
+        }
+
+        // function c
+        function C(a, b, c) {
+            B.call(this, a, b);
+            this.c = c;
+            C.prototype.getC = function () {
+                obj.getB();
+                document.write(c + "<br>");
+            }
+        }
+
+        B.prototype = Object.create(A.prototype);
+        B.prototype.constructor = B;
+        C.prototype = Object.create(B.prototype);
+        C.prototype.constructor = C;
+        var obj = new C(1, 2, 3);
+        obj.getC(); 
+    </script>
+</body>
+
+</html>

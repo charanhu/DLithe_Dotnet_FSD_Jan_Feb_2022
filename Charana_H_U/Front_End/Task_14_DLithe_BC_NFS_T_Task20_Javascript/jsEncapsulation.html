@@ -27,6 +27,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="jsEncapsulation.html">ENCAPSULATION</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jsRegularExpression.html">Regular Expression</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -40,6 +43,10 @@
             <b>Encapsulation</b> is the process of wrapping the data (variables) and code acting on the data (methods)
             up into a single unit.
         </p>
+        <p>Use var keyword to make data members private.</p>
+        <p>Use getter and setter to make data members public.</p>
+        <p>Use setter methods to set the data and getter methods to get that data.</p>
+        
         <p>Example:</p>
         <pre>
             <code>
@@ -69,5 +76,67 @@
 
             </script>
         </p>
+        <hr>
+        <p>Example 2:</p>
+        <pre>
+            <code>
+                class car {
+                    constructor() {
+                        var model;
+                        var color;
+                    }
+                    getModel() {
+                        return this.model;
+                    }
+                    setModel(model) {
+                        this.model = model;
+                    }
+                    getColor() {
+                        return this.color;
+                    }
+                    setColor(color) {
+                        this.color = color;
+                    }
+                }
+                var myCar = new car();
+                myCar.setModel("Ford");
+                myCar.setColor("Red");
+                document.write("Car Model and Color: " + myCar.getModel() + " " + myCar.getColor());
+            </code>
+        </pre>
+        <p>Results:</p>
+        <p>
+            <script>
+                class car {
+                    constructor() {
+                        var model;
+                        var color;
+                    }
+                    getModel() {
+                        return this.model;
+                    }
+                    setModel(model) {
+                        this.model = model;
+                    }
+                    getColor() {
+                        return this.color;
+                    }
+                    setColor(color) {
+                        this.color = color;
+                    }
+                }
+                var myCar = new car();
+                myCar.setModel("Ford");
+                myCar.setColor("Red");
+                document.write("Car Model and Color: " + myCar.getModel() + " " + myCar.getColor());
 
+            </script>
+        </p>
+        <br>
     </div>
+    <br>
+
+
+</body>
+
+</html>

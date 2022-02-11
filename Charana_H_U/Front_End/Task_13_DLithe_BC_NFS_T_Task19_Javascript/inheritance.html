@@ -167,15 +167,16 @@
         <p>Example:</p>
         <pre>
             <code>
-                class display {
-                    disp(x, y) {
-                        document.write("2 arguments" + "<br>" + x + "<br>" + y);
-                    }
-                    disp(x, y, z) {
-                        document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
-                    }
+                function Display(){
+
                 }
-                var d = new display();
+                Display.prototype.disp=function(x,y){
+                    document.write("2 arguments" + "<br>" + x + "<br>" + y);
+                }
+                Display.prototype.disp=function(x,y,z){
+                    document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
+                }
+                var d = new Display();
                 d.disp(4, 3);
                 d.disp(4, 3, 2);
             </script>
@@ -184,15 +185,19 @@
         <p>Results:</p>
         <p>
             <script>
-                class display {
-                    disp(x, y) {
-                        document.write("2 arguments" + "<br>" + x + "<br>" + y);
+                function Display(){
+                    if (arguments.length == 2){
+
                     }
-                    disp(x, y, z) {
-                        document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
-                    }
+
                 }
-                var d = new display();
+                Display.prototype.disp=function(x,y){
+                    document.write("2 arguments" + "<br>" + x + "<br>" + y);
+                }
+                Display.prototype.disp=function(x,y,z){
+                    document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
+                }
+                var d = new Display();
                 d.disp(4, 3);
                 d.disp(4, 3, 2);
             </script>
