@@ -71,29 +71,45 @@
             </code>
         </pre>
         <p>Results:</p>
-        <p id="demo">
+        <p id="demo"></p>
+        <p>
             <script>
                 class Car {
                     constructor(brand) {
-                        this.carname = brand;
+                        this.carbrand = brand;  //Ford
                     }
-                    present() {
-                        return 'I have a ' + this.carname;
+                    show1() {
+                        return 'I have a ' + this.carbrand;
                     }
                 }
 
                 class Model extends Car {
                     constructor(brand, mod) {
                         super(brand);
-                        this.model = mod;
+                        this.model = mod;    //Mustang
                     }
-                    show() {
-                        return this.present() + ', it is a ' + this.model;
+                    show2() {
+                        return this.show1() + ', it is a ' + this.model;
                     }
                 }
 
-                let myCar = new Model("Ford", "Mustang");
-                document.getElementById("demo").innerHTML = myCar.show();
+                class Color extends Model {
+                    constructor(brand, mod, color) {
+                        super(brand, mod);
+                        this.color = color;  //Red
+                    }
+                    show3() {
+                        return this.show2() + ', it is a ' + this.color;
+                    }
+                }
+
+                let myCar = new Color("Ford", "Mustang", "Red");
+
+                document.getElementById("demo").innerHTML = myCar.show3();
+
+                document.write(myCar.show3());
+
+
             </script>
         </p>
         <br>
@@ -185,17 +201,17 @@
         <p>Results:</p>
         <p>
             <script>
-                function Display(){
-                    if (arguments.length == 2){
+                function Display() {
+                    if (arguments.length == 2) {
 
                     }
 
                 }
-                Display.prototype.disp=function(x,y){
+                Display.prototype.disp = function (x, y) {
                     document.write("2 arguments" + "<br>" + x + "<br>" + y);
                 }
-                Display.prototype.disp=function(x,y,z){
-                    document.write("3 Arguments"+ "<br>" + x + "<br>" + y + "<br>" + z);
+                Display.prototype.disp = function (x, y, z) {
+                    document.write("3 Arguments" + "<br>" + x + "<br>" + y + "<br>" + z);
                 }
                 var d = new Display();
                 d.disp(4, 3);
