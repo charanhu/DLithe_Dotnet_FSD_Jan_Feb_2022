@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Inheritance</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">JavaScript</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Prototype</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inheritance.html">Inheritance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Polymorphism.html">Polymorphism</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container" style="margin-top: 70px;">
+        <br>
+        <h1>JavaScript Inheritance</h1>
+        <hr>
+        <p>
+            To create a class inheritance, use the extends keyword.
+            <br>
+            A class created with a class inheritance inherits all the methods from another class
+        </p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                class Car {
+                    constructor(brand) {
+                        this.carname = brand;
+                    }
+                    present() {
+                        return 'I have a ' + this.carname;
+                    }
+                }
+
+                class Model extends Car {
+                    constructor(brand, mod) {
+                        super(brand);
+                        this.model = mod;
+                    }
+                    show() {
+                        return this.present() + ', it is a ' + this.model;
+                    }
+                }
+
+                let myCar = new Model("Ford", "Mustang");
+                document.getElementById("demo").innerHTML = myCar.show();
+            </code>
+        </pre>
+        <p>Results:</p>
+        <p id="demo">
+            <script>
+                class Car {
+                    constructor(brand) {
+                        this.carname = brand;
+                    }
+                    present() {
+                        return 'I have a ' + this.carname;
+                    }
+                }
+
+                class Model extends Car {
+                    constructor(brand, mod) {
+                        super(brand);
+                        this.model = mod;
+                    }
+                    show() {
+                        return this.present() + ', it is a ' + this.model;
+                    }
+                }
+
+                let myCar = new Model("Ford", "Mustang");
+                document.getElementById("demo").innerHTML = myCar.show();
+            </script>
+        </p>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>Getter and Setter</h1>
+        <hr>
+        <p>
+            Getter and Setter are used to control access to an object's properties.
+            <br>
+            Getter and Setter are used to control access to an object's properties.
+        </p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                class Employee {
+                    constructor(name, id) {
+                        this.name = name;
+                        this.id = id;
+                    }
+                    get employeeName() {
+                        return this.name;
+                    }
+                    set employeeName(name) {
+                        this.name = name;
+                    }
+                }
+
+                let employee = new Employee("John", 1);
+                document.getElementById("demo").innerHTML = employee.employeeName;
+
+                employee.employeeName = "Pete";
+                document.getElementById("demo").innerHTML = employee.employeeName;
+            </code>
+        </pre>
+        <p>Results:</p>
+        <p id="demo1">
+            <script>
+                class Employee {
+                    constructor(name, id) {
+                        this.name = name;
+                        this.id = id;
+                    }
+                    get employeeName() {
+                        return this.name;
+                    }
+                    set employeeName(name) {
+                        this.name = name;
+                    }
+                }
+
+                let employee = new Employee("John", 1);
+                document.getElementById("demo1").innerHTML = employee.employeeName;
+
+                employee.employeeName = "Pete";
+                document.getElementById("demo1").innerHTML = employee.employeeName;
+            </script>
+        </p>
+        <br>
+    </div>
+
+
+
+</body>
+
+</html>
