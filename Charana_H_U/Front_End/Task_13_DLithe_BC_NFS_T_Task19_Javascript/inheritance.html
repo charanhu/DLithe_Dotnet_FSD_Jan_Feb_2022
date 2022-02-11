@@ -115,19 +115,19 @@
                         this.name = name;
                         this.id = id;
                     }
-                    get employeeName() {
+                    get employeeName() {            //values get displayed(read)
                         return this.name;
                     }
-                    set employeeName(name) {
+                    set employeeName(name) {        //values get inititized(write)
                         this.name = name;
                     }
                 }
 
                 let employee = new Employee("John", 1);
-                document.getElementById("demo").innerHTML = employee.employeeName;
+                document.getElementById("demo1").innerHTML = employee.employeeName;
 
                 employee.employeeName = "Pete";
-                document.getElementById("demo").innerHTML = employee.employeeName;
+                document.getElementById("demo1").innerHTML = employee.employeeName;
             </code>
         </pre>
         <p>Results:</p>
