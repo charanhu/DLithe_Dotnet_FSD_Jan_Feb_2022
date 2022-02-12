@@ -59,6 +59,8 @@ let score = 0
 
 loadQuiz()
 
+
+//load quiz to html
 function loadQuiz() {
 
     deselectAnswers()
@@ -72,6 +74,7 @@ function loadQuiz() {
     option4_text.innerText = currentQuizQuestions.option4
 }
 
+//deselect answers
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
@@ -86,7 +89,7 @@ function getSelected() {
     return answer
 }
 
-
+//evaluate the answer
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     if (answer) {
