@@ -1,35 +1,35 @@
 const quizQuestions = [
     {
         question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "javascript",
-        correct: "d",
+        option1: "Java",
+        option2: "C",
+        option3: "Python",
+        option4: "javascript",
+        correct: "option4",
     },
     {
         question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
-        correct: "b",
+        option1: "Central Style Sheets",
+        option2: "Cascading Style Sheets",
+        option3: "Cascading Simple Sheets",
+        option4: "Cars SUVs Sailboats",
+        correct: "option2",
     },
     {
         question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
-        correct: "a",
+        option1: "Hypertext Markup Language",
+        option2: "Hypertext Markdown Language",
+        option3: "Hyperloop Machine Language",
+        option4: "Helicopters Terminals Motorboats Lamborginis",
+        correct: "option1",
     },
     {
         question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
-        correct: "b",
+        option1: "1996",
+        option2: "1995",
+        option3: "1994",
+        option4: "none of the above",
+        correct: "option2",
     },
 
 
@@ -41,13 +41,13 @@ const answerEls = document.querySelectorAll('.answer')
 
 const questionEl = document.getElementById('question')
 
-const a_text = document.getElementById('a_text')
+const option1_text = document.getElementById('option1_text')
 
-const b_text = document.getElementById('b_text')
+const option2_text = document.getElementById('option2_text')
 
-const c_text = document.getElementById('c_text')
+const option3_text = document.getElementById('option3_text')
 
-const d_text = document.getElementById('d_text')
+const option4_text = document.getElementById('option4_text')
 
 const submitBtn = document.getElementById('submit')
 
@@ -55,7 +55,7 @@ const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 
 //inittially score is 0
-let score = 0 
+let score = 0
 
 loadQuiz()
 
@@ -66,10 +66,10 @@ function loadQuiz() {
     const currentQuizQuestions = quizQuestions[currentQuiz]
 
     questionEl.innerText = currentQuizQuestions.question
-    a_text.innerText = currentQuizQuestions.a
-    b_text.innerText = currentQuizQuestions.b
-    c_text.innerText = currentQuizQuestions.c
-    d_text.innerText = currentQuizQuestions.d
+    option1_text.innerText = currentQuizQuestions.option1
+    option2_text.innerText = currentQuizQuestions.option2
+    option3_text.innerText = currentQuizQuestions.option3
+    option4_text.innerText = currentQuizQuestions.option4
 }
 
 function deselectAnswers() {
@@ -98,13 +98,9 @@ submitBtn.addEventListener('click', () => {
 
         if (currentQuiz < quizQuestions.length) {
             loadQuiz()
-        } 
+        }
         else {
-            quiz.innerHTML = `
-           <h2>You answered ${score}/${quizQuestions.length} questions correctly</h2>
-
-           <button onclick="location.reload()">Reload</button>
-           `
+            quiz.innerHTML = "You answered correctly " + score + ' quesions out of ' + quizQuestions.length + " quesions";
         }
     }
 })
