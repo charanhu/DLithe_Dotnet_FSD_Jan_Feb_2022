@@ -52,6 +52,7 @@ const option4_text = document.getElementById('option4_text')
 const submitBtn = document.getElementById('submit')
 
 
+//initialize array item index 0
 let currentQuiz = 0
 
 //inittially score is 0
