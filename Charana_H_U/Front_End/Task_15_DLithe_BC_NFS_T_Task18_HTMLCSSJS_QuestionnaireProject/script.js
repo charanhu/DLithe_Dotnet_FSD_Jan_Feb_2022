@@ -1,4 +1,4 @@
-const quizData = [
+const quizQuestions = [
     {
         question: "Which language runs in a web browser?",
         a: "Java",
@@ -36,17 +36,26 @@ const quizData = [
 ];
 
 const quiz = document.getElementById('quiz')
+
 const answerEls = document.querySelectorAll('.answer')
+
 const questionEl = document.getElementById('question')
+
 const a_text = document.getElementById('a_text')
+
 const b_text = document.getElementById('b_text')
+
 const c_text = document.getElementById('c_text')
+
 const d_text = document.getElementById('d_text')
+
 const submitBtn = document.getElementById('submit')
 
 
 let currentQuiz = 0
-let score = 0
+
+//inittially score is 0
+let score = 0 
 
 loadQuiz()
 
@@ -54,13 +63,13 @@ function loadQuiz() {
 
     deselectAnswers()
 
-    const currentQuizData = quizData[currentQuiz]
+    const currentQuizQuestions = quizQuestions[currentQuiz]
 
-    questionEl.innerText = currentQuizData.question
-    a_text.innerText = currentQuizData.a
-    b_text.innerText = currentQuizData.b
-    c_text.innerText = currentQuizData.c
-    d_text.innerText = currentQuizData.d
+    questionEl.innerText = currentQuizQuestions.question
+    a_text.innerText = currentQuizQuestions.a
+    b_text.innerText = currentQuizQuestions.b
+    c_text.innerText = currentQuizQuestions.c
+    d_text.innerText = currentQuizQuestions.d
 }
 
 function deselectAnswers() {
@@ -81,17 +90,18 @@ function getSelected() {
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     if (answer) {
-        if (answer === quizData[currentQuiz].correct) {
+        if (answer === quizQuestions[currentQuiz].correct) {
             score++
         }
 
         currentQuiz++
 
-        if (currentQuiz < quizData.length) {
+        if (currentQuiz < quizQuestions.length) {
             loadQuiz()
-        } else {
+        } 
+        else {
             quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+           <h2>You answered ${score}/${quizQuestions.length} questions correctly</h2>
 
            <button onclick="location.reload()">Reload</button>
            `
