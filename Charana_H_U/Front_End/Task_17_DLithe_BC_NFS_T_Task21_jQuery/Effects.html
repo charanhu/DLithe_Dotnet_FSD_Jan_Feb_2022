@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -43,8 +44,229 @@
     <br>
 
     <div class="container">
-
+        <h1>Effects - hide() and Show()</h1>
+        <hr>
+        <p>The hide() method hides the selected elements.</p>
+        <p>The show() method displays the selected elements.</p>
+        <p>Syntax:</p>
+        <pre>$(selector).hide(speed,easing,callback)</pre>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function(){
+                    $(".btn1").click(function(){
+                      $("p").hide();
+                    });
+                    $(".btn2").click(function(){
+                      $("p").show();
+                    });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn1").click(function () {
+                    $("p").hide();
+                });
+                $("#btn2").click(function () {
+                    $("p").show();
+                });
+            });
+        </script>
+        <button id="btn1" class="btn btn-primary">Hide</button>
+        <button id="btn2" class="btn btn-success">Show</button>
+        <br>
+        <br>
     </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - Toggle</h1>
+        <hr>
+        <p>The toggle() method toggles the visibility of the selected elements.</p>
+        <p>Syntax:</p>
+        <pre>$(selector).toggle(speed,easing,callback)</pre>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn3").click(function () {
+                        $("#toggle_img").toggle();
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn3").click(function () {
+                    $("#toggle_img").toggle();
+                });
+            });
+        </script>
+        <img src="assets/images/blog2.png" id="toggle_img" alt="">
+        <br>
+        <br>
+        <button id="btn3" class="btn btn-primary">Toggle</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - Fade In</h1>
+        <hr>
+        <p>The fadeIn() method makes the selected elements fade in.</p>
+        <p>Syntax:</p>
+        <pre>$(selector).fadeIn(speed,easing,callback)</pre>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn4").click(function () {
+                        $("#fade_img").fadeOut("slow");
+                    });
+                    $("#btn5").click(function () {
+                        $("#fade_img").fadeIn("fast");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn4").click(function () {
+                    $("#fade_img").fadeOut("slow");
+                });
+                $("#btn5").click(function () {
+                    $("#fade_img").fadeIn("fast");
+                });
+            });
+        </script>
+        <img src="assets/images/blog2.png" id="fade_img" alt="">
+        <br>
+        <br>
+        <button id="btn4" class="btn btn-primary">Fade out</button>
+        <button id="btn5" class="btn btn-info">Fade in</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - Slide</h1>
+        <hr>
+        <p>The slideDown() method makes the selected elements slide down.</p>
+        <p>Syntax:</p>
+        <pre>$(selector).slideDown(speed,easing,callback)</pre>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn6").click(function () {
+                        $("#slide_img").slideUp("slow");
+                    });
+                    $("#btn7").click(function () {
+                        $("#slide_img").slideDown("fast");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn6").click(function () {
+                    $("#slide_img").slideUp("slow");
+                });
+                $("#btn7").click(function () {
+                    $("#slide_img").slideDown("fast");
+                });
+            });
+        </script>
+        <img src="assets/images/blog2.png" id="slide_img" alt="">
+        <br>
+        <br>
+        <button id="btn6" class="btn btn-primary">Slide up</button>
+        <button id="btn7" class="btn btn-info">Slide down</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - Chaining</h1>
+        <hr>
+        <p>The chaining method is used to execute multiple jQuery methods on the same element.</p>
+        <p>Syntax:</p>
+        <pre>$(selector).method1().method2().method3()</pre>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn8").click(function () {
+                        $("#chaining_img").hide("slow").show("slow").hide("slow").show("slow");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn8").click(function () {
+                    $("#chaining_img").hide("slow").show("slow").hide("slow").show("slow");
+                });
+            });
+        </script>
+        <img src="assets/images/blog2.png" id="chaining_img" alt="">
+        <br>
+        <br>
+        <button id="btn8" class="btn btn-primary">Chaining</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - Callback</h1>
+        <hr>
+        <p>The callback method is used to execute a function after a specified delay.</p>
+        <p>Syntax:</p>
+        <pre>$(selector).delay(speed,callback)</pre>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn9").click(function () {
+                        $("#callback_img").hide("slow").show("slow").delay(1000).hide("slow").show("slow");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn9").click(function () {
+                    $("#callback_img").hide("slow", function () {
+                        alert("The image is hidden");
+                    });
+                });
+            });
+        </script>
+        <img src="assets/images/blog2.png" id="callback_img" alt="">
+        <br>
+        <br>
+        <button id="btn9" class="btn btn-primary">Callback</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+
 
 </body>
 
