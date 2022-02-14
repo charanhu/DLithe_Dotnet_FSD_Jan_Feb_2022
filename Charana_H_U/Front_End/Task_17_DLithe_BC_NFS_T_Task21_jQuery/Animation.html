@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -43,8 +44,140 @@
     <br>
 
     <div class="container">
+        <br>
+        <h1>jQuery Animation</h1>
+        <hr>
+        <p>The animate() method performs a custom animation of a set of CSS properties. <br><br>
 
+            This method changes an element from one state to another with CSS styles. The CSS property value is changed
+            gradually, to create an animated effect.<br><br>
+
+            Only numeric values can be animated (like "margin:30px"). String values cannot be animated (like
+            "background-color:red"), except for the strings "show", "hide" and "toggle". These values allow hiding and
+            showing the animated element.</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn").click(function () {
+                        $("#div1").animate({
+                            left: '250px',
+                            opacity: '0.5',
+                            height: '150px',
+                            width: '150px'
+                        });
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn").click(function () {
+                    $("#div1").animate({
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    });
+                });
+            });
+        </script>
+        <button id="btn" class="btn btn-primary">Animate</button>
+        <div id="div1" style="background-color:white; width:100px; height:100px; margin:30px;"></div>
+        <br>
     </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jquery Animate Example 2</h1>
+        <hr>
+        <p>Example 2:</p>
+        <pre>
+            <code>
+
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn2").click(function () {
+                    $("#div2").animate({
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    }, function () {
+                        alert("Animation complete");
+                    });
+                });
+            });
+        </script>
+        <button id="btn2" class="btn btn-primary">Animate</button>
+        <div id="div2" style="background-color:white; width:100px; height:100px; margin:30px;"></div>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jquery Animate Example 3</h1>
+        <hr>
+        <p>Example 3:</p>
+        <pre>
+            <code>
+
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn3").click(function () {
+                    $("#div3").animate({
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    }, {
+                        duration: 'slow',
+                        easing: 'easeOutBounce',
+                        complete: function () {
+                            alert("Animation complete");
+                        }
+                    });
+                });
+            });
+        </script>
+        <button id="btn3" class="btn btn-primary">Animate</button>
+        <div id="div3" style="background-color:white; width:100px; height:100px; margin:30px;"></div>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jquery Animate Example 4</h1>
+        <hr>
+        <p>Example 4:</p>
+        <pre>
+            <code>
+
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn5").click(function () {
+                    $("#box").animate({ height: "300px" }).animate({ width: "300px"}).animate({ height: "100px" }).animate({ width: "100px" });
+                });
+            });
+        </script>
+        <button id="btn5">Animate height</button>
+        <div id="box" style="background:pink;height:100px;width:100px;margin:6px;"></div>
+        <br>
+    </div>
+    <br>
 
 </body>
 
