@@ -96,7 +96,18 @@
         <p>Example 2:</p>
         <pre>
             <code>
-
+                $(document).ready(function () {
+                    $("#btn2").click(function () {
+                        $("#div2").animate({
+                            left: '250px',
+                            opacity: '0.5',
+                            height: '150px',
+                            width: '150px'
+                        }, function () {
+                            alert("Animation complete");
+                        });
+                    });
+                });
             </code>
         </pre>
         <p>Results:</p>
@@ -127,30 +138,23 @@
         <p>Example 3:</p>
         <pre>
             <code>
-
+                $(document).ready(function () {
+                    $("#btn5").click(function () {
+                        $("#box").animate({ height: "300px" }).animate({ width: "300px" }).animate({ height: "100px" }).animate({ width: "100px" });
+                    });
+                });
             </code>
         </pre>
         <p>Results:</p>
         <script>
             $(document).ready(function () {
-                $("#btn3").click(function () {
-                    $("#div3").animate({
-                        left: '250px',
-                        opacity: '0.5',
-                        height: '150px',
-                        width: '150px'
-                    }, {
-                        duration: 'slow',
-                        easing: 'easeOutBounce',
-                        complete: function () {
-                            alert("Animation complete");
-                        }
-                    });
+                $("#btn5").click(function () {
+                    $("#box").animate({ height: "300px" }).animate({ width: "300px" }).animate({ height: "100px" }).animate({ width: "100px" });
                 });
             });
         </script>
-        <button id="btn3" class="btn btn-primary">Animate</button>
-        <div id="div3" style="background-color:white; width:100px; height:100px; margin:30px;"></div>
+        <button id="btn5" class="btn btn-info">Animate height</button>
+        <div id="box" style="background:pink;height:100px;width:100px;margin:6px;"></div>
         <br>
     </div>
     <br>
@@ -162,19 +166,30 @@
         <p>Example 4:</p>
         <pre>
             <code>
-
+                $(document).ready(function () {
+                    $("#btn6").click(function () {
+                        $("#box2").animate({
+                            left: '250px',
+                            opacity: '0.5',
+                            height: '150px',
+                            width: '150px'
+                        }, function () {
+                            alert("Animation complete");
+                        });
+                    });
+                });
             </code>
         </pre>
         <p>Results:</p>
         <script>
             $(document).ready(function () {
-                $("#btn5").click(function () {
-                    $("#box").animate({ height: "300px" }).animate({ width: "300px"}).animate({ height: "100px" }).animate({ width: "100px" });
+                $("#btn7").click(function () {
+                    $("#box7").animate({ left: "+=1000px" }).animate({ top: "+=40px" }).animate({ left: "-=1000px" }).animate({ top: "-=40px" });
                 });
             });
         </script>
-        <button id="btn5">Animate height</button>
-        <div id="box" style="background:pink;height:100px;width:100px;margin:6px;"></div>
+        <button id="btn7" class="btn btn-info">Move Right Left</button>
+        <div id="box7" style="background:red;height:100px;width:100px;margin:6px;position:relative">Hello!, Welcome</div>
         <br>
     </div>
     <br>
