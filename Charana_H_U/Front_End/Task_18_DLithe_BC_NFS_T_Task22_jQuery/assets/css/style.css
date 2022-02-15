@@ -1,0 +1,14 @@
+body{
+    font-size: 22px;
+}
+.container{
+    background-color:maroon;
+    color: white;
+    border-radius: 15px;
+    margin-top: 100px;
+}
+pre{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
