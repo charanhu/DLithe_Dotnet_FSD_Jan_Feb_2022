@@ -26,7 +26,10 @@
                     <a class="nav-link" href="jQAnimation.html">Animation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="jQueryMethods.html">jQuery Methods</a>
+                    <a class="nav-link active" href="jQueryMethods.html">Methods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jQClasses.html">Classes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="jQAccordion_Autocomplete.html">Accordion and Autocomplete</a>
@@ -286,6 +289,189 @@
         <br>
     </div>
     <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - append()</h1>
+        <hr>
+        <p>append() - Inserts content at the end of the selected elements</p>
+        <p>Example 9:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn19").click(function () {
+                        $("#p19").append(" After paragraph");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn19").click(function () {
+                    $("#p19").append(" After paragraph.");
+                });
+            });
+        </script>
+        <button id="btn19" class="btn btn-primary">append()</button>
+        <p id="p19">Before paragraph.</p>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - prepend()</h1>
+        <hr>
+        <p>prepend() - Inserts content at the beginning of the selected elements</p>
+        <p>Example 10:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn20").click(function () {
+                        $("#p20").prepend("Before paragraph");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn20").click(function () {
+                    $("#p20").prepend("Before paragraph. ");
+                });
+            });
+        </script>
+        <button id="btn20" class="btn btn-primary">prepend()</button>
+        <p id="p20">After paragraph.</p>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - before()</h1>
+        <hr>
+        <p>before() - Inserts content before the selected elements</p>
+        <p>Example 11:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn21").click(function () {
+                        $("#p21").before("Before paragraph");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn21").click(function () {
+                    $("#p21").before("Before paragraph. ");
+                });
+            });
+        </script>
+        <p id="p21">After paragraph.</p>
+        <br>
+        <button id="btn21" class="btn btn-primary">before()</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - after()</h1>
+        <hr>
+        <p>after() - Inserts content after the selected elements</p>
+        <p>Example 12:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn22").click(function () {
+                        $("#p22").after("After paragraph");
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn22").click(function () {
+                    $("#p22").after("After paragraph. ");
+                });
+            });
+        </script>
+        <p id="p22">Before paragraph.</p>
+        <br>
+        <button id="btn22" class="btn btn-primary">after()</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - remove()</h1>
+        <hr>
+        <p>remove() - Removes the selected elements</p>
+        <p>Example 13:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn23").click(function () {
+                        $("#p23").remove();
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn23").click(function () {
+                    $("#p23").remove();
+                });
+            });
+        </script>
+        <p id="p23">Before paragraph.</p>
+        <br>
+        <button id="btn23" class="btn btn-primary">remove()</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="container">
+        <br>
+        <h1>jQuery - empty()</h1>
+        <hr>
+        <p>empty() - Removes all child nodes from the selected elements</p>
+        <p>Example 14:</p>
+        <pre>
+            <code>
+                $(document).ready(function () {
+                    $("#btn24").click(function () {
+                        $("#p24").empty();
+                    });
+                });
+            </code>
+        </pre>
+        <p>Results:</p>
+        <script>
+            $(document).ready(function () {
+                $("#btn24").click(function () {
+                    $("#p24").empty();
+                });
+            });
+        </script>
+        <p id="p24">Before paragraph.</p>
+        <br>
+        <button id="btn24" class="btn btn-primary">empty()</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    
 
 
 </body>
