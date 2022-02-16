@@ -15,9 +15,9 @@ namespace Program3
             Console.WriteLine("Before Swap:");
             Console.WriteLine("a: " + val1);
             Console.WriteLine("b: " + val2);
-            val1 = val1 + val2;            //30=20+10
-            val2 = val1 - val2;           //20=30-10
-            val1 = val1 - val2;           //10=30-20
+            val1 = val1 + val2;            // 30=20+10
+            val2 = val1 - val2;           // 20=30-10
+            val1 = val1 - val2;           // 10=30-20
             Console.WriteLine("After Swap:");
             Console.WriteLine("a: " + val1);
             Console.WriteLine("b: " + val2);
