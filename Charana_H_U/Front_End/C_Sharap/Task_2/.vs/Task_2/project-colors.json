@@ -5,7 +5,17 @@
       "ProjectGuid": "c9d99d92-2679-4a05-918e-c1f03d411c01",
       "DisplayName": "Task_2",
       "ColorIndex": 0
+    },
+    "d737b5c3-1a03-4aaf-be21-9468fb3473ad": {
+      "ProjectGuid": "d737b5c3-1a03-4aaf-be21-9468fb3473ad",
+      "DisplayName": "Assembly",
+      "ColorIndex": 1
+    },
+    "b2c7ffcc-4907-4e3c-bac9-51e4eb4b1595": {
+      "ProjectGuid": "b2c7ffcc-4907-4e3c-bac9-51e4eb4b1595",
+      "DisplayName": "Assembly_Task_2",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

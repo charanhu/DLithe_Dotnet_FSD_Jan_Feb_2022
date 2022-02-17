@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Assembly_Task\\Assembly_Task.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Assembly_Task\\Assembly_Task.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Assembly_Task\\Assembly_Task.csproj",
+        "projectName": "Assembly_Task",
+        "projectPath": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Assembly_Task\\Assembly_Task.csproj",
+        "packagesPath": "C:\\Users\\Charan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Assembly_Task\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Task_2\\Task_2.csproj": {
+                "projectPath": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Task_2\\Task_2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Task_2\\Task_2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Task_2\\Task_2.csproj",
+        "projectName": "Task_2",
+        "projectPath": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Task_2\\Task_2.csproj",
+        "packagesPath": "C:\\Users\\Charan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charan\\Documents\\Visual_Studio_Code\\DLithe\\DLithe_DotnetFSD_JanFeb2022\\Charana_H_U\\Front_End\\C_Sharap\\Task_2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
