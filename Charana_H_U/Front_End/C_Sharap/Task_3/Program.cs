@@ -7,6 +7,7 @@ namespace Airthmatic
         static void Main(String[] args)
         {
             Console.WriteLine("Hello!, Welcome to C#");
+            Console.WriteLine("Hey!")
         }
     }
 }
