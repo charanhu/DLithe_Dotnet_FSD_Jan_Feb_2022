@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace OneDArray
+namespace Program1
 {
-    class ArrayOne
+    class OneDArray
     {
         static void Main()
         {
