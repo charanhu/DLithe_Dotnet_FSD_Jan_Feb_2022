@@ -21,7 +21,7 @@ namespace Program4
         public static void Main()
         {
             int y = Addition(10, 20, 30, 40);
-            Console.WriteLine(y);
+            Console.WriteLine("Total Sum is: "+y);
         }
     }
 }
