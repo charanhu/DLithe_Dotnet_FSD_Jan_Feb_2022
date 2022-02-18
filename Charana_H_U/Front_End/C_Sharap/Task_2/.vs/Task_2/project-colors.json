@@ -15,7 +15,12 @@
       "ProjectGuid": "b2c7ffcc-4907-4e3c-bac9-51e4eb4b1595",
       "DisplayName": "Assembly_Task_2",
       "ColorIndex": 2
+    },
+    "17308b94-8cf8-4da2-baf0-3deb97055cfc": {
+      "ProjectGuid": "17308b94-8cf8-4da2-baf0-3deb97055cfc",
+      "DisplayName": "Assembly_Task",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

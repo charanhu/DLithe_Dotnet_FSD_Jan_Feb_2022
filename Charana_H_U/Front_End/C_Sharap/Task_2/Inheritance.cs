@@ -28,12 +28,12 @@ namespace Inheritance
         public void StudentDetails()//parameters can also be possible here
         {
             Console.WriteLine("Student Details are");
-            s_id = 12;
-            s_name = "Arista";
+            int  s_1 = 12;
+            string s_2 = "Arista";
             School sc=new School();
-            sc.student_info(s_id, s_name);
-            Console.WriteLine("Derived Student ID: " + s_id);
-            Console.WriteLine("Derived Student NAME: " + s_name);
+            sc.student_info(s_1, s_2);
+            Console.WriteLine("Derived Student ID: " + s_1);
+            Console.WriteLine("Derived Student NAME: " + s_2);
         }
     }
 

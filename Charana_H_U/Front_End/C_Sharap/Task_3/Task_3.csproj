@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Inheritance.Main_Class</StartupObject>
+    <StartupObject>TwoDArray.ArrayTwo</StartupObject>
   </PropertyGroup>
 
 </Project>
