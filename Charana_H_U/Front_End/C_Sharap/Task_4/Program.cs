@@ -17,7 +17,7 @@ namespace Task_4
             MARK1 = int.Parse(Console.ReadLine());             // Mark 1
             MARK2 = int.Parse(Console.ReadLine());
             MARK3 = int.Parse(Console.ReadLine());
-            int TOTAL = MARK1 + MARK2 + MARK3;
+            int TOTAL = MARK1 + MARK2 + MARK3;                 // int
             AVERAGE = TOTAL / 3;                              // /3
             Console.WriteLine("\n\n\nTHE STUDENT DETAILS ARE GIVEN BELOW :");
             Console.WriteLine("THE STUDENT NO IS: " + SNO);               // +

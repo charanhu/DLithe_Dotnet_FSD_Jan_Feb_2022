@@ -50,6 +50,9 @@ namespace PropertyDemo
                 return _eaddress;
             }
         }
+    }
+    class Program1
+    {
         static void Main(string[] args)
         {
             Example obj = new Example();
