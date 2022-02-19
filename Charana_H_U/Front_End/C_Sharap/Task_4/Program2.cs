@@ -10,7 +10,7 @@ namespace PropertyDemo
         {
             set
             {
-                empid = value;
+                _empid = value;
             }
             get
             {
@@ -53,14 +53,14 @@ namespace PropertyDemo
         static void Main()                           // Main method
         {
             Example example = new Example();                
-            example._empid = 1;
-            example._eage = 2;
-            example._ename = "a";
-            example._eaddress = "b";
-            Console.WriteLine(example.empid);
-            Console.WriteLine(example.eage); 
-            Console.WriteLine(example.eaddress);
-            Console.WriteLine(example.ename);
+            example._empid = 101;
+            example._eage = 22;
+            example._ename = "Charan";
+            example._eaddress = "Shivamogga";
+            Console.WriteLine("EMP ID: "+example.empid);
+            Console.WriteLine("EMP AGE: "+example.eage);
+            Console.WriteLine("EMP NAME: "+example.ename);
+            Console.WriteLine("EMP ADDRESS: "+example.eaddress); 
         }
     }
 }
