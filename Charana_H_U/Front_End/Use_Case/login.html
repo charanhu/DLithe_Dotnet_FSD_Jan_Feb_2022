@@ -6,6 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -30,12 +32,18 @@
           <a class="nav-link" href="#">Policy</a>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+        <li><a class="fas fa-user" href="#" style="text-decoration: none; color: white;"> SignUp </a></i></li>
+        &nbsp;&nbsp;
+        <li><a class="fas fa-sign-in-alt" href="#" style="text-decoration: none; color: white;"> SignIn </a></i></li>
+      </ul>
     </div>
   </nav>
   <br>
 
   <div class="container">
-    <form>
+    <form class="card" style="width: 300px; border-radius: 15px;">
+      <br>
       <div class="form-column">
         <div class="col">
           <label for="email">Email</label>
@@ -45,9 +53,29 @@
           <label for="paw">Password</label>
           <input type="password" class="form-control" id="paw" placeholder="Enter password" name="pswd">
         </div>
+        <div class="col">
+          <br>
+          <input type="checkbox" class="form-checkbox" id="paw"><span> Remember me </span>
+        </div>
+        <div class="col">
+          <br>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
       </div>
+      <br>
     </form>
   </div>
+  <br>
+
+  <!-- <div class="container">
+    <div class="card" style="width:">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+  </div> -->
 
 </body>
 
