@@ -5,7 +5,7 @@ namespace DLithe
     public class A
     {
         public string Name;
-        public void GetName()
+        public void GetName()                       // ()
         {
             Console.WriteLine("Name: {0}", Name);
         }
@@ -15,7 +15,7 @@ namespace DLithe
         public string Location;
         public void GetLocation()
         {
-            Console.WriteLine("Location: {0}", Location);
+            Console.WriteLine("Location: {0}", Location);        // {0}
         }
     }
     public class C : B
@@ -34,7 +34,7 @@ namespace DLithe
             c.Name = "John Doe";
             c.Location = "Hyderabad";
             c.Age = 32;
-            c.GetAge();
+            c.GetAge();                     //  Missing calling methods
             c.GetLocation();
             c.GetName();
             Console.WriteLine("\nPress Any Key to Exit..");
