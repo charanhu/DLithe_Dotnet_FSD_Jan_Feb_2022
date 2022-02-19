@@ -44,15 +44,15 @@ namespace PropertyDemo
             set
             {
                 _eaddress = value;
-            }
+            }                                     // get method
             get
             {
                 return _eaddress;
             }
         }
-        static void Main()
+        static void Main()                           // Main method
         {
-            Example example = new Example();
+            Example example = new Example();                
             example._empid = 1;
             example._eage = 2;
             example._ename = "a";
