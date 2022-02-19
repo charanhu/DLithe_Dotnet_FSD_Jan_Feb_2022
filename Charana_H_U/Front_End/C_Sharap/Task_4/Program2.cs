@@ -2,7 +2,7 @@
 
 namespace PropertyDemo
 {
-    class Example
+    public class Example
     {
         private int _empid, _eage;
         private string _ename, _eaddress;
@@ -10,7 +10,7 @@ namespace PropertyDemo
         {
             set
             {
-                _empid = value;
+                _empid = value;              // _empid
             }
             get
             {
