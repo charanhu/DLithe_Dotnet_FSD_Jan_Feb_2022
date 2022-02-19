@@ -4,8 +4,8 @@ namespace PropertyDemo
 {
     class Example
     {
-        public int _empid, _eage;
-        public string _ename, _eaddress;
+        private int _empid, _eage;
+        private string _ename, _eaddress;
         public int empid
         {
             set
@@ -50,23 +50,19 @@ namespace PropertyDemo
                 return _eaddress;
             }
         }
-    }
-
-        class Program
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
-            {
-                Example obj = new Example();
-                obj._empid = 101;
-                obj._ename = "pranaya";
-                obj._eage = 27;
-                obj._eaddress = "bbsr";
-                Console.WriteLine("Employee details are:");
-                Console.WriteLine("employee id:" + obj.empid);
-                Console.WriteLine("employee name:" + obj.ename);
-                Console.WriteLine("employee age:" + obj.eage);
-                Console.WriteLine("employee address:" + obj.eaddress);
-                Console.ReadKey();
-            }
+            Example obj = new Example();
+            obj._empid = 101;
+            obj._ename = "pranaya";
+            obj._eage = 27;
+            obj._eaddress = "bbsr";
+            Console.WriteLine("Employee details are:");
+            Console.WriteLine("employee id:" + obj.empid);
+            Console.WriteLine("employee name:" + obj.ename);
+            Console.WriteLine("employee age:" + obj.eage);
+            Console.WriteLine("employee address:" + obj.eaddress);
+            Console.ReadKey();
         }
     }
+}
