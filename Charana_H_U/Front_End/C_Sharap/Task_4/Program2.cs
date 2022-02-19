@@ -53,10 +53,10 @@ namespace PropertyDemo
         static void Main(string[] args)
         {
             Example obj = new Example();
-            obj._empid = 101;
-            obj._ename = "pranaya";
-            obj._eage = 27;
-            obj._eaddress = "bbsr";
+            obj.empid = 101;
+            obj.ename = "pranaya";
+            obj.eage = 27;
+            obj.eaddress = "bbsr";
             Console.WriteLine("Employee details are:");
             Console.WriteLine("employee id:" + obj.empid);
             Console.WriteLine("employee name:" + obj.ename);
