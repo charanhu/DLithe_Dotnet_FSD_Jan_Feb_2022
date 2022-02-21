@@ -2,7 +2,7 @@
 
 namespace String_Demo
 {
-    class Program1
+    class String
     {
         static void Main()
         {
