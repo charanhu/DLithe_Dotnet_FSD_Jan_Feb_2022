@@ -5,7 +5,12 @@
       "ProjectGuid": "58593f37-c998-43c8-8db9-13eca4777420",
       "DisplayName": "Task_6",
       "ColorIndex": 0
+    },
+    "de4fd210-91b8-450e-8428-9fc2f0ef4797": {
+      "ProjectGuid": "de4fd210-91b8-450e-8428-9fc2f0ef4797",
+      "DisplayName": "Task_7",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
