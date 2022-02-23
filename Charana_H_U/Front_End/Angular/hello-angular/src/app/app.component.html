@@ -1,5 +1,16 @@
-<h1>FIrst angular application</h1>
+<h1>My First angular APPLICATION</h1>
+<!-- String Interpolation-->
 <h2>{{title}}</h2>
-<router-outlet>
-
-</router-outlet>
+<!--property binding-->
+<img [src]="image" alt="grapics" style="height:200px;width:200px">
+<br>
+<img [src]="image1" alt="grapics1" style="height:400px;width:400px">
+<!--two way binding-->
+<br><br>
+<input [(ngModel)]="value" type="text" style="width:500px;height:30px;">
+{{value}}
+<br>
+<br>
+<!--event Binding-->
+<button (click)="onClick()">Event</button>
+<router-outlet></router-outlet>

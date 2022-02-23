@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello Angular';
+  title = 'hello-angular'; //string Interpolation
+  public image = "/assets/images/Charan.jpg" //property binding
+  public image1 = "/assets/images/Charan.jpg"
+  //Two way Binding
+  public value = " ";
+  //event binding
+  onClick() {
+    alert("welcome to event binding")
+  }
 }
