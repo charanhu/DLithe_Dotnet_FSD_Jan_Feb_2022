@@ -11,7 +11,8 @@ namespace ArrayListExample
         static void Main()
         {
             var data = new ArrayList();
-            Console.WriteLine("ArrayList")
+            Console.WriteLine("ArrayList");
+            data.Add("Heelo_Charan");
             data.Add(1);
             data.Add(2);   
             data.Add(3);
