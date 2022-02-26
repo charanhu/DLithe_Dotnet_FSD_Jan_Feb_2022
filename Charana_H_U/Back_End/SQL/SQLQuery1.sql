@@ -22,7 +22,7 @@ insert into trainees values(3, 'Kiran', 'ECE');
 insert into trainees values(4, 'Sahil', 'MCA');
 insert into trainees values(5, 'Deepak', 'CSE');
 insert into trainees values(6, 'Venkatesh', 'CSE');
---SELECT (CONDITION-wher clause)
+--SELECT (CONDITION-wherE clause)
 select * from trainees where DepartmentName='IT';
 select * from trainees where id>2 and id<6;
 select * from trainees where Name like 'S%';
