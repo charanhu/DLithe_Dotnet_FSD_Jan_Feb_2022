@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="heading"><strong>Services </strong>Demo</h1>
+
+  <button type="button" (click)="getPolicies()">View Policies</button>
+  <hr>
+  <!--ngStyle-->
+  <div>Choose Theme Color:</div><input [(ngModel)]="color" />
+  <div class='table-responsive'>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th [ngStyle]="{'color': color}">Policy_ID</th>
+          <th [ngStyle]="{'color': color}">Policy_Name</th>
+          <th [ngStyle]="{'color': color}">Policy_Plan(yearly)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--*ngFor Directive - Looping through the policies-->
+        <!--policies is the array holding all the polcies accessed from the PolicyService-->
+        <tr *ngFor="let policy of policies;">
+          <td>{{policy.policyID}}</td>
+          <td>{{policy.policyname}}</td>
+          <td>{{policy.policyrate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+</div>
