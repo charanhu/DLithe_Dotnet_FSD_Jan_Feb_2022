@@ -7,7 +7,7 @@ namespace FileIOApplication
     {
         static void Main(string[] args)
         {
-            FileStream F = new FileStream("test.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream F = new FileStream("test2.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             Console.WriteLine("Files Operations");
             Console.WriteLine();
 

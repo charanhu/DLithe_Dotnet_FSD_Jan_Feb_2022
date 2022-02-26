@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>File_.File_3</StartupObject>
+    <StartupObject>Files.Files_2</StartupObject>
   </PropertyGroup>
 
 </Project>
